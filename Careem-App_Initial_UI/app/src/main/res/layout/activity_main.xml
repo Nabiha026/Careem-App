@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/careem_img"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="397dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/removbg" />
+
+    <RelativeLayout
+        android:id="@+id/buttonTab"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="219dp"
+        android:background="@drawable/button_background"
+        android:padding="20dp"> <!-- Align this layout to the bottom -->
+
+        <!-- TextView added inside buttonTab -->
+
+        <TextView
+            android:id="@+id/bottomGreetingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:text="Good to see you again!"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/continueWithGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_button"
+            android:text="Continue with Google"
+            android:textColor="@color/grey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/proceedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/continueWithGoogle"
+            android:layout_marginBottom="29dp"
+            android:background="@drawable/round_button_green"
+            android:text="Continue with phone number"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
