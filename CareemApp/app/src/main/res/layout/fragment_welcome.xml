@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/careem_img"
+    android:padding="16dp">
+
+    <!-- Logo at the top -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/removbg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <!-- Text greeting the user -->
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good to see you again!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- "Continue with phone number" Button -->
+    <Button
+        android:id="@+id/continueWithPhoneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with phone number"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button_green"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/greetingText"
+        android:layout_centerHorizontal="true" />
+
+    <!-- "Continue other way" Button -->
+    <Button
+        android:id="@+id/continueOtherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue other way"
+        android:textSize="18sp"
+        android:background="@drawable/round_button"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/continueWithPhoneButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

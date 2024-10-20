@@ -1,0 +1,40 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/splashFragment">
+
+    <!-- Splash Screen -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.careemapp.SplashFragment"
+        android:label="Splash Screen">
+        <action
+            android:id="@+id/action_splashFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+
+    <!-- Welcome Screen -->
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.careemapp.WelcomeFragment"
+        android:label="Welcome Screen">
+        <action
+            android:id="@+id/action_welcomeFragment_to_phoneNumberFragment"
+            app:destination="@id/phoneNumberFragment" />
+    </fragment>
+
+    <!-- Phone Number Input Screen -->
+    <fragment
+        android:id="@+id/phoneNumberFragment"
+        android:name="com.example.careemapp.PhoneNumberFragment"
+        android:label="Phone Number Screen">
+        <action
+            android:id="@+id/action_phoneNumberFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+
+    <!-- OTP Screen -->
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.example.careemapp.FragmentOtp"
+        android:label="OTP Screen" />
+</navigation>

@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.CareemApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary branding colors -->
+
+    </style>
+
+</resources>
