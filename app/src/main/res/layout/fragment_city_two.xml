@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back button and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrowback" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Select departure time"
+                android:textSize="20sp"
+                android:textColor="#263238"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- First Card for 'Leave NOW' -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_corners">
+
+            <LinearLayout
+                android:id = "@+id/cityprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leave NOW"
+                    android:textSize="18sp"
+                    android:textColor="#263238"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18,700 PKR"
+                    android:textSize="16sp"
+                    android:textColor="#263238"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In a rush? Book your ride now"
+                    android:textSize="14sp"
+                    android:textColor="#757575" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Second Card for 'Leave LATER' -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_corners">
+
+            <LinearLayout
+                android:id = "@+id/cityprice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leave LATER"
+                    android:textSize="18sp"
+                    android:textColor="#263238"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18,700 PKR"
+                    android:textSize="16sp"
+                    android:textColor="#263238"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select pickup date and time"
+                    android:textSize="14sp"
+                    android:textColor="#757575" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Terms and Conditions Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Any relevant surcharges, peaks, toll fee or VAT may be added"
+            android:textSize="14sp"
+            android:textColor="#757575" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn more"
+            android:textSize="14sp"
+            android:textColor="#00796B" />
+    </LinearLayout>
+</ScrollView>

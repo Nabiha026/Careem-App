@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7F9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Header with Back Button, Logo, and Menu Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrowback" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Pay"
+                android:textSize="20sp"
+                android:textColor="#263238"
+                android:fontFamily="sans-serif-medium" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu" />
+        </LinearLayout>
+
+        <!-- Wallet Balance Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="PKR 0"
+            android:textSize="32sp"
+            android:textColor="#263238"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage wallet →"
+            android:textSize="16sp"
+            android:textColor="#263238"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Send Credit and Request Credit Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/sendCreditButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send credit"
+                android:drawableLeft="@drawable/arrowdown"
+                android:background="@drawable/round_button"
+                android:textColor="#263238"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/requestCreditButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request credit"
+                android:drawableLeft="@drawable/arrowup"
+                android:background="@drawable/round_button"
+                android:textColor="#263238"
+                android:padding="12dp"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <!-- Features Section (Scan & Pay, Get Paid, Easy Split) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/qr" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan and Pay"
+                    android:textSize="14sp"
+                    android:textColor="#263238" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/waller" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Paid"
+                    android:textSize="14sp"
+                    android:textColor="#263238" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/split" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Easy Split"
+                    android:textSize="14sp"
+                    android:textColor="#263238" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Wallet Card Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Your wallet"
+            android:textSize="18sp"
+            android:textColor="#263238"
+            android:fontFamily="sans-serif-medium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/navy_blue"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="PKR 0"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/addFundsButton"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/round_button"
+                android:text="Add funds"
+                android:textColor="#263238" />
+        </RelativeLayout>
+
+        <!-- Terms and Conditions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pay Terms and conditions"
+            android:textSize="14sp"
+            android:textColor="#263238" />
+    </LinearLayout>
+</ScrollView>

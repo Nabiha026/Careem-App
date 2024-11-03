@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- Back arrow -->
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrowback" />
+
+    <!-- Help Icon -->
+    <ImageView
+        android:id="@+id/helpIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/headset_mic_24dp_00000_fill0_wght400_grad0_opsz24" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backarrow"
+        android:layout_marginTop="32dp"
+        android:text="Welcome!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <!-- Phone Number Prompt -->
+    <TextView
+        android:id="@+id/whats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeText"
+        android:layout_marginTop="24dp"
+        android:text="What's your number?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/whats"
+        android:layout_marginTop="8dp"
+        android:text="We need to send you a code to verify your phone number."
+        android:textColor="@color/lightgrey"
+        android:textSize="16sp" />
+
+    <!-- Phone Number Input Field -->
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtitleText"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your phone number"
+        android:inputType="phone"
+        android:drawableStart="@drawable/icons8pakistan48"
+        android:padding="12dp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Green Button -->
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/phoneNumberInput"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/round_button_green"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

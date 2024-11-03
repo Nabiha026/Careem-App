@@ -1,0 +1,164 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/splashFragment">
+
+    <!-- Splash Screen -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.careemapp.SplashFragment"
+        android:label="Splash Screen">
+        <action
+            android:id="@+id/action_splashFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+
+    <!-- Welcome Screen -->
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.careemapp.WelcomeFragment"
+        android:label="Welcome Screen">
+        <action
+            android:id="@+id/action_welcomeFragment_to_phoneNumberFragment"
+            app:destination="@id/phoneNumberFragment" />
+    </fragment>
+
+    <!-- Phone Number Input Screen -->
+    <fragment
+        android:id="@+id/phoneNumberFragment"
+        android:name="com.example.careemapp.PhoneNumberFragment"
+        android:label="Phone Number Screen">
+        <action
+            android:id="@+id/action_phoneNumberFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+        <action
+            android:id="@+id/action_phoneNumberFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+
+    <!-- OTP Screen -->
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.example.careemapp.FragmentOtp"
+        android:label="OTP Screen">
+        <action
+            android:id="@+id/action_otpFragment_to_secureLoginFragment"
+            app:destination="@id/secureLoginFragment" />
+        <action
+            android:id="@+id/action_otpFragment_to_phoneNumberFragment"
+            app:destination="@id/phoneNumberFragment" />
+    </fragment>
+
+    <!-- Secure Login Screen -->
+    <fragment
+        android:id="@+id/secureLoginFragment"
+        android:name="com.example.careemapp.SecureLoginFragment"
+        android:label="Secure Login">
+        <action
+            android:id="@+id/action_secureLoginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <!-- Main Screen -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.careemapp.MainScreenFragment">
+        <action
+            android:id="@+id/action_fragmentMainScreen_to_fragmentMaps"
+            app:destination="@id/fragmentMaps" />
+        <action
+            android:id="@+id/action_fragmentMainScreen_to_fragmentAllServices"
+            app:destination="@id/fragmentAllServices" />
+        <action
+            android:id="@+id/action_fragmentMainScreen_to_fragmentcredit"
+            app:destination="@id/fragmentclickup" />
+        <action
+            android:id="@+id/action_fragmentMainScreen_to_fragmentpay"
+            app:destination="@id/fragmentpay" />
+        <action
+            android:id="@+id/action_fragmentMainScreen_to_fragmentcity"
+            app:destination="@id/fragmentcity" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentMaps"
+        android:name="com.example.careemapp.MapFragment" />
+
+    <fragment
+        android:id="@+id/fragmentAllServices"
+        android:name="com.example.careemapp.AllServicesFragment"
+        android:label="All Services" />
+    <fragment
+        android:id="@+id/fragmentclickup"
+        android:name="com.example.careemapp.FragmentClickup"
+        android:label="Clickup Services" />
+
+    <fragment
+        android:id="@+id/fragmentpay"
+        android:name="com.example.careemapp.PayFragment"
+        android:label="Pay Services">
+
+        <action
+            android:id="@+id/action_fragmentpay_to_fragmentamount"
+            app:destination="@id/fragmentamount" />
+        <action
+            android:id="@+id/action_fragmentpay_to_fragmentpayment"
+            app:destination="@id/fragmentpayment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentamount"
+        android:name="com.example.careemapp.AmountFragment"
+        android:label="Amount Services" />
+    <fragment
+        android:id="@+id/fragmentpayment"
+        android:name="com.example.careemapp.PaymentFragment"
+        android:label="Payment Services" />
+    <fragment
+        android:id="@+id/fragmentcity"
+        android:name="com.example.careemapp.CityFragment"
+        android:label="city Services" >
+        <action
+            android:id="@+id/action_fragmentMainScreen_to_fragmentcityone"
+            app:destination="@id/fragmentcityone" />
+        <action
+            android:id="@+id/action_fragmentMainScreen_to_fragmentcitytwo"
+            app:destination="@id/fragmentcitytwo" />
+        <action
+            android:id="@+id/action_fragmentMainScreen_to_fragmentcitythree"
+            app:destination="@id/fragmentcitythree" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentcityone"
+        android:name="com.example.careemapp.CityOneFragment"
+        android:label="city Services"
+
+        >
+        <action
+            android:id="@+id/action_fragmentcityone_to_fragmentcitytwo"
+            app:destination="@id/fragmentcitytwo" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentcitytwo"
+        android:name="com.example.careemapp.CityTwoFragment"
+        android:label="city Services">
+    <action
+        android:id="@+id/action_fragmentcitytwo_to_fragmentcitythree"
+        app:destination="@id/fragmentcitythree" />
+
+
+</fragment>
+
+    <fragment
+        android:id="@+id/fragmentcitythree"
+        android:name="com.example.careemapp.CityThreeFragments"
+        android:label="Payment Services" />
+</navigation>

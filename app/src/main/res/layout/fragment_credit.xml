@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with Back Button, Logo, and Menu Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrowback"
+                android:contentDescription="Back Button" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="rightclick"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/menuButton"
+                android:layout_width="24dp"
+
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu"
+                android:contentDescription="Menu Icon" />
+        </LinearLayout>
+
+        <!-- Banner Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/promo1"
+            android:contentDescription="Banner"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_corners" />
+
+        <!-- "Meet the ambitious people" Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meet the ambitious people you're supporting"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Card Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- Card 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/careem_img"
+                    android:contentDescription="Card Image"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_corners" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Educate a child in Pakistan"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Citizens Foundation"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginTop="4dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="Share Icon"
+                    android:src="@drawable/arrowforward" />
+            </LinearLayout>
+
+            <!-- Card 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/careem_img"
+                    android:contentDescription="Card Image"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_corners" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Give your Zakat towards Education"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Support Pakistan's children"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginTop="4dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/arrowforward"
+                    android:contentDescription="Share Icon"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Add more cards as necessary following the same structure -->
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

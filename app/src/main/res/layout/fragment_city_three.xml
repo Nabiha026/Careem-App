@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header with Back Button and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrowback" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Select departure time"
+            android:textSize="20sp"
+            android:textColor="#263238"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <!-- Selected Date Display -->
+    <TextView
+        android:id="@+id/selectedDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sunday, 3 November · 02:30 PM"
+        android:textSize="16sp"
+        android:textColor="#263238"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Static Calendar Image -->
+    <ImageView
+        android:id="@+id/calendarImage"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/calender" />
+
+    <!-- Time Picker -->
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:timePickerMode="spinner"
+
+        android:layout_marginTop="16dp" />
+
+    <!-- Confirm Date and Time Button -->
+    <Button
+        android:id="@+id/confirmDateTimeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:background="@drawable/button_background"
+        android:text="Confirm date and time"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
