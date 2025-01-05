@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "905159909355",
+    "project_id": "careemapp-abd9f",
+    "storage_bucket": "careemapp-abd9f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905159909355:android:bfad333f60ea9b354103ae",
+        "android_client_info": {
+          "package_name": "com.example.careemapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASSZN8zotoRjARW-hx8-gTAElV30yfubU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

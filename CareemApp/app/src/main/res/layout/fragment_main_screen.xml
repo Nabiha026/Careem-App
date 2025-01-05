@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Section with Pay Button, Logo, and Menu Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/payid"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:background="@drawable/background_button"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Icon -->
+                <ImageView
+                    android:layout_width="20dp"
+
+                    android:layout_height="20dp"
+                    android:contentDescription="Pay Icon"
+                    android:src="@drawable/careem_symbol_white_rgb" />
+
+                <!-- Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Pay"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <!-- Centered Logo -->
+            <ImageView
+                android:layout_width="219dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:contentDescription="Careem Logo"
+                android:src="@drawable/green_logo" />
+
+            <!-- Menu Icon on the Right -->
+            <ImageView
+                android:id="@+id/menuButton"
+                android:layout_width="58dp"
+                android:layout_height="36dp"
+                android:clickable="true"
+                android:contentDescription="Menu"
+                android:focusable="true"
+                android:src="@drawable/ic_menu" />
+        </LinearLayout>
+
+        <!-- GridLayout for Service Icons -->
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="4"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- Service Icons in GridLayout -->
+            <LinearLayout
+                android:id="@+id/ridesService"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="59dp"
+                    android:layout_height="52dp"
+                    android:contentDescription="Rides Icon"
+                    android:src="@drawable/careem_car" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rides"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Flexi Service -->
+            <LinearLayout
+                android:id="@+id/flexiService"
+                android:layout_width="96dp"
+                android:layout_height="88dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="Flexi Icon"
+                    android:src="@drawable/careem_car" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Flexi"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Premium Car Service -->
+            <LinearLayout
+                android:id="@+id/premiumCarService"
+                android:layout_width="101dp"
+                android:layout_height="88dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="59dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="Premium Car Icon"
+                    android:src="@drawable/futuristic_car" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Premium Car"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Bike Service -->
+            <LinearLayout
+                android:id="@+id/bikeService"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="53dp"
+                    android:layout_height="52dp"
+                    android:contentDescription="Bike Icon"
+                    android:src="@drawable/careem_bike" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Bike"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Repeat for other services -->
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="4"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- Service Icons in GridLayout -->
+            <LinearLayout
+                android:id="@+id/deliveryService"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="59dp"
+                    android:layout_height="57dp"
+                    android:contentDescription="Rides Icon"
+                    android:src="@drawable/delivery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Delivery"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Flexi Service -->
+            <LinearLayout
+                android:id="@+id/clickupService"
+                android:layout_width="97dp"
+                android:layout_height="91dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="clickup"
+                    android:src="@drawable/clickup_careem" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="clickup"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Premium Car Service -->
+            <LinearLayout
+                android:id="@+id/mapService"
+                android:layout_width="100dp"
+                android:layout_height="92dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="59dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="Premium Car Icon"
+                    android:src="@drawable/map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="City to City"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Bike Service -->
+            <LinearLayout
+                android:id="@+id/AllService"
+                android:layout_width="102dp"
+                android:layout_height="93dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="41dp"
+                    android:contentDescription="arrow icon"
+                    android:src="@drawable/green_arow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="All Services"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Repeat for other services -->
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <!-- Top Offers Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top offers"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Promotional Cards Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Card 1 -->
+            <LinearLayout
+                android:id="@+id/card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_background"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="164dp"
+                    android:contentDescription="Easypaisa Offer"
+                    android:scaleType="centerCrop"
+                    android:clipToOutline="true"
+                    android:src="@drawable/promo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="20% off with Easypaisa"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use code: EASYPaisa"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Card 2 -->
+            <LinearLayout
+                android:id="@+id/card1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_background"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="166dp"
+                    android:contentDescription="UBL Offer"
+                    android:scaleType="centerCrop"
+
+                    android:clipToOutline="true"
+                    android:src="@drawable/promo1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="30% off with UBL Card"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use code: UBL30"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Additional Full-Width Promotional Card -->
+        <LinearLayout
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:clipToOutline="true"
+                android:contentDescription="Mind Blowing Rides"
+                android:scaleType="centerCrop"
+                android:src="@drawable/promo1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Careem pe aik dum mind blowing prices!"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

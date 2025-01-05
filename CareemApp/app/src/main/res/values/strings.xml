@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CareemApp</string>
+
+
+
+    <string name="back">Back Button</string>
+    <string name="help">Help Button</string>
+    <string name="whatsapp_logo_desc">WhatsApp Logo</string>
+
+
+    <string name="verify_mobile_number">Verify your mobile number</string>
+    <string name="subtext_verification">You will receive a WhatsApp message with a verification pin on +923320480755</string>
+    <string name="resend_code_timer">Resend code 01:56</string>
+    <string name="fingerprint_illustration">Fingerprint Illustration</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+<style name="TopSheetDialog" parent="Theme.AppCompat.Dialog">
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowAnimationStyle">@style/TopSheetAnimation</item>
+    <item name="android:gravity">top</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+</style>
+
+<style name="TopSheetAnimation">
+<item name="android:windowEnterAnimation">@anim/top_in</item>
+<item name="android:windowExitAnimation">@anim/top_out</item>
+</style>
+    </resources>
